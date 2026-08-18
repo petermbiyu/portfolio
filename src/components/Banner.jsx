@@ -42,17 +42,18 @@ const Banner = () => {
   return (
     <section
       id="home"
-      className="text-[#B8B8B8] mt-0 min-h-screen relative pt-[260px] pb-[100px] bg-[url(../banner-bg.png)] bg-cover bg-no-repeat bg-center bg-linear-[90deg] from-[rgba(170,54,124,0.5)] to-[rgba(74,47,169,0.5)]"
+      className="text-[#B8B8B8] mt-0 min-h-screen relative pt-[260px] pb-[100px] bg-[url(/banner-bg.png)] bg-cover bg-no-repeat bg-center "
     >
       <div className="mx-5 sm:mx-10 md:mx-15 lg:mx-20">
         <div className="w-full md:w-[90%] lg:w-[70%] relative z-[2]">
-          <span className="font-bold spacing-[0.8px] px-[10px] py-[8px] text-[20px] mb-[16px] inline-block border-1 border-gray-500 bg-linear-to-bl from-violet-500 to-fuchsia-500">
+          <span className="font-bold spacing-[0.8px] px-[10px] py-[8px] text-[20px] mb-[16px] inline-block border-1 border-gray-500 bg-linear-[90deg] from-[rgba(170,54,124)] to-[rgba(74,47,169)] ">
             Welcome to my Portfolio
           </span>
           <h1 className="text-[30px] md:text-[40] lg:text-[50px] font-bold spacing-[0.8px] mb-[20px] block leading-none">
-            Hi, Peter Muigai here
+            Hello, it's me <br />
+            Peter Muigai
             <br />
-            and I'm a <span>{text}</span>
+            And I'm a <span>{text}</span>
           </h1>
           <p className="text-[#B8B8B8] text-[18px] spacing-[0.8px] leading-relaxed w-[96%]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
@@ -65,7 +66,7 @@ const Banner = () => {
             suscipit?
           </p>
           <button
-            className="py-2 px-5 border-1 rounded-full font-bold text-[20px] mt-[60px] "
+            className="py-2 px-5 border-1 rounded-full font-bold text-[20px] mt-[60px] hover:bg-white hover:text-[#121212] translate-all duration-300 ease"
             onClick={() => console.log("connected")}
           >
             Let's connect <FaArrowRight className="inline" />

@@ -31,7 +31,7 @@ const Contact = () => {
 
   return (
     <section id="contacts" className="text-white mt-0 relative ">
-      <div className="w-full min-h-screen px-5 sm:px-10 md:px-20 bg-linear-[90deg] from-[rgba(170,54,124)] to-[rgba(74,47,169)] flex justify-center items-center">
+      <div className="w-full py-20 px-5 sm:px-10 md:px-20 bg-linear-[90deg] from-[rgba(170,54,124)] to-[rgba(74,47,169)] flex justify-center items-center">
         <div className="px-10 hidden flex-1 sm:flex sm:w-[30%] md:w-[40%] lg:w-[50%]">
           <img src={assets.contactImg} alt="contact image" />
         </div>
@@ -78,7 +78,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="border-2 border-white px-10 py-3 font-bold bg-white text-black rounded-[5px] cursor-pointer"
+              className=" px-11 py-3 font-bold bg-white hover:bg-[#B8B8B8] text-black rounded-[5px] cursor-pointer translate-all duration-300 ease"
             >
               Send
             </button>

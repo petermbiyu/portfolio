@@ -4,8 +4,8 @@ import { assets } from "../assets/assets";
 
 const Footer = () => {
   return (
-    <section className="text-white mt-0 relative bg-[url(../footer-bg.png)] bg-cover bg-center bg-no-repeat">
-      <div className="flex justify-between items-center pt-20 mx-5 sm:mx-10 md:mx-20">
+    <section className="text-white my-0 border-1 border-[#121212] relative bg-[url(/footer-bg.png)] bg-cover bg-center bg-no-repeat">
+      <div className="flex justify-between items-center pt-10 mx-5 sm:mx-10 md:mx-20">
         <div>
           <img
             src={assets.logo}
@@ -34,10 +34,12 @@ const Footer = () => {
               <FaYoutube />
             </a>
           </span>
-          <p className="my-5">
-            &copy; copyright {new Date().getFullYear()}. All rights reserved
-          </p>
         </div>
+      </div>
+      <div>
+        <p className="my-5 text-right mx-5 sm:mx-10 md:mx-20">
+          &copy; copyright {new Date().getFullYear()}. All rights reserved
+        </p>
       </div>
     </section>
   );
