@@ -7,7 +7,7 @@ import colorSharp2 from "./color-sharp2.png";
 import contactImg from "./contact-img.svg";
 import footerBg from "./footer-bg.png";
 import headerImg from "./header-img.svg";
-import profileBg from "./profile-bg.png";
+import profileBg from "./profile-bg.webp";
 import logo from "./logo.svg";
 import meter1 from "./meter1.svg";
 import meter2 from "./meter2.svg";
