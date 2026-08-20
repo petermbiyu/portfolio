@@ -49,10 +49,11 @@ const Banner = () => {
           <span className="font-bold spacing-[0.8px] px-[10px] py-[8px] text-[20px] mb-[16px] inline-block border-1 border-gray-500 bg-linear-[90deg] from-[rgba(170,54,124)] to-[rgba(74,47,169)] ">
             Welcome to my Portfolio
           </span>
-          <h1 className="text-[30px] md:text-[40] lg:text-[50px] font-bold spacing-[0.8px] mb-[20px] block leading-none">
+          <h1 className="text-[20px] md:text-[30] lg:text-[40px] font-bold spacing-[0.8px] mb-[20px] block leading-none">
             Hello, it's me <br />
-            Peter Muigai
-            <br />
+            <span className="text-[30px] md:text-[40px] lg:text-[50px]">
+              Peter Muigai <br />
+            </span>
             And I'm a <span>{text}</span>
           </h1>
           <p className="text-[#B8B8B8] text-[18px] spacing-[0.8px] leading-relaxed w-[96%]">

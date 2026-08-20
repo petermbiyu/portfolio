@@ -5,7 +5,10 @@ import { BsArrowUpRightCircleFill } from "react-icons/bs";
 const ProjectCard = ({ title, description, imgUrl }) => {
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
   const toggleOverlay = () => {
-    setIsOverlayVisible((prev) => !prev);
+    const isDesktop = window.matchMedia("(hover:hover)").matches;
+    if (!isDesktop) {
+      setIsOverlayVisible((prev) => !prev);
+    }
   };
   return (
     <div
