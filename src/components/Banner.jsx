@@ -67,7 +67,11 @@ const Banner = () => {
           </p>
           <button
             className="py-2 px-5 border-1 rounded-full font-bold text-[20px] mt-[60px] hover:bg-white hover:text-[#121212] translate-all duration-300 ease"
-            onClick={() => console.log("connected")}
+            onClick={() => {
+              document
+                .getElementById("contacts")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Let's connect <FaArrowRight className="inline" />
           </button>

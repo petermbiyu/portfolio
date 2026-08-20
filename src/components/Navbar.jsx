@@ -8,10 +8,10 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menu, setMenu] = useState(false);
 
-  const updateActiveLink = (value) => {
-    setActive(value);
+  const haddleNavigate = (item) => {
+    setActive(item);
     setMenu(!menu);
-    console.log(value);
+    document.getElementById(item)?.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -58,9 +58,9 @@ const Navbar = () => {
                 ? "opacity-[75%] cursor-pointer text-red-500"
                 : "opacity-[75%] cursor-pointer"
             }
-            onClick={() => updateActiveLink("home")}
+            onClick={() => haddleNavigate("home")}
           >
-            <a href="#home">Home</a>
+            Home
           </li>
           <li
             className={
@@ -68,9 +68,9 @@ const Navbar = () => {
                 ? "cursor-pointer text-red-500"
                 : "cursor-pointer"
             }
-            onClick={() => updateActiveLink("skills")}
+            onClick={() => haddleNavigate("skills")}
           >
-            <a href="#skills">Skills</a>
+            Skills
           </li>
           <li
             className={
@@ -78,9 +78,9 @@ const Navbar = () => {
                 ? "cursor-pointer text-red-500"
                 : "cursor-pointer"
             }
-            onClick={() => updateActiveLink("projects")}
+            onClick={() => haddleNavigate("projects")}
           >
-            <a href="#projects">Projects</a>
+            Projects
           </li>
         </ul>
         <span className="flex justify-center items-center gap-3 z-101">
@@ -105,7 +105,7 @@ const Navbar = () => {
         </span>
         <button
           className="hidden lg:inline border-2 border-white w-40 h-[60px] font-semibold text-[1.1rem] cursor-pointer hover:bg-white hover:text-[#121212] transition-all duration-300 ease"
-          onClick={() => {}}
+          onClick={() => haddleNavigate("contacts")}
         >
           Let's Connect
         </button>
@@ -126,9 +126,9 @@ const Navbar = () => {
                   ? "opacity-[75%] cursor-pointer text-orange-400"
                   : "opacity-[75%] cursor-pointer"
               }
-              onClick={() => updateActiveLink("home")}
+              onClick={() => haddleNavigate("home")}
             >
-              <a href="#home">Home</a>
+              Home
             </li>
             <li
               className={
@@ -136,9 +136,9 @@ const Navbar = () => {
                   ? "cursor-pointer text-orange-400"
                   : "cursor-pointer"
               }
-              onClick={() => updateActiveLink("skills")}
+              onClick={() => haddleNavigate("skills")}
             >
-              <a href="#skills">Skills</a>
+              Skills
             </li>
             <li
               className={
@@ -146,9 +146,9 @@ const Navbar = () => {
                   ? "cursor-pointer text-orange-400"
                   : "cursor-pointer"
               }
-              onClick={() => updateActiveLink("projects")}
+              onClick={() => haddleNavigate("projects")}
             >
-              <a href="#projects">Projects</a>
+              Projects
             </li>
           </ul>
           <span className="flex justify-center items-center gap-5">
