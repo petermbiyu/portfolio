@@ -38,35 +38,35 @@ const Contact = () => {
         <div className="w-full flex-1 sm:w-[70%] md:w-[60%] lg:w-[50%]">
           <h2 className="text-[45px] font-bold mb-[20px]">Get in Touch</h2>
           <form ref={form} onSubmit={sendMail}>
-            <div className="flex items-center justify-center gap-2 mb-[10px]">
+            <div className="lg:flex items-center justify-center gap-2 mb-[10px]">
               <input
                 type="text"
                 placeholder="First Name"
                 name="first_name"
                 required
-                className="py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] w-[50%] bg-gray-200/10"
+                className="w-full lg:w-[50%] py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px]  bg-gray-200/10"
               />
               <input
                 type="text"
                 name="last_name"
                 placeholder="Last Name"
                 required
-                className="py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] w-[50%] bg-gray-200/10"
+                className="w-full mt-2 lg:w-[50%] py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] bg-gray-200/10"
               />
             </div>
-            <div className="flex items-center justify-center gap-2 mb-[10px]">
+            <div className="lg:flex items-center justify-center gap-2 mb-[10px]">
               <input
                 type="email"
                 name="email"
                 placeholder="Email Address"
                 required
-                className="py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] w-[50%] bg-gray-200/10"
+                className="w-full lg:w-[50%] py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] w-[50%] bg-gray-200/10"
               />
               <input
                 type="text"
                 name="phone"
                 placeholder="Phone No."
-                className="py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] w-[50%] bg-gray-200/10"
+                className="w-full mt-2 lg:w-[50%] py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] w-[50%] bg-gray-200/10"
               />
             </div>
             <div className="mb-[20px]">

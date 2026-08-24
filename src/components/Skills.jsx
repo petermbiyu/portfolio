@@ -28,10 +28,10 @@ const Skills = () => {
   };
   return (
     <section id="skills" className="text-white mt-0  pb-[50px] relative ">
-      <div className="bg-[#151515] mx-0 md:mx-10 lg:mx-20 relative z-[1] rounded-[64px] text-center px-[50px] py-[60px] mt-[-60px]">
+      <div className="bg-[#151515] mx-0 md:mx-10 lg:mx-20 relative z-[1] rounded-[64px] text-center px-[20px] md:px-[50px] py-[60px] mt-[-60px]">
         <div>
           <h2 className="text-[45px] font-bold">Technical Skills</h2>
-          <p className="text-[#B8B8B8] text-[18px] leading-[1.5] mt-[14px] mb-[75px]">
+          <p className="text-[#B8B8B8] md:text-[18px] leading-[1.5] mt-[14px] mb-[75px] text-justify md:text-center">
             I work across the full web development stack, using modern frontend
             technologies like React, JavaScript, Tailwind CSS, and Vite,
             alongside Node.js and Express.js for backend development. I also

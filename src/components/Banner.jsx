@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <section
       id="home"
-      className="text-[#B8B8B8] mt-0 min-h-screen relative pt-[260px] pb-[100px] bg-[url(/banner-bg.png)] bg-cover bg-no-repeat bg-center "
+      className="text-[#B8B8B8] mt-0 min-h-screen relative pt-[100px] lg:pt-[260px] pb-[100px] bg-[url(/banner-bg.png)] bg-cover bg-no-repeat bg-center "
     >
       <div className="mx-5 sm:mx-10 md:mx-15 lg:mx-20">
         <div className="w-full md:w-[90%] lg:w-[70%] relative z-[2]">
@@ -16,10 +16,12 @@ const Banner = () => {
           <h1 className="text-[25px] md:text-[35] lg:text-[45px] font-bold spacing-[0.8px] mb-[20px] block leading-none">
             Hi, I'm Peter Muigai
           </h1>
-          <p className="text-[#B8B8B8] text-[18px] spacing-[0.8px] leading-relaxed w-[96%]">
+          <p className="text-[#B8B8B8] md:text-[18px] spacing-[0.8px] leading-relaxed text-justify md:text-left ">
             A passionate Frontend and Backend Developer, Blogger, Vlogger, and
             Teacher.
-            <br /> I enjoy building modern, responsive, and user-friendly web
+          </p>
+          <p className="backdrop-blur-[15px] md:text-[18px] text-justify md:text-left">
+            I enjoy building modern, responsive, and user-friendly web
             applications that solve real-world problems. From creating engaging
             frontend experiences to developing powerful backend systems and
             working with databases, I love turning ideas into functional digital
@@ -32,7 +34,7 @@ const Banner = () => {
             technology and knowledge to make a meaningful impact.
           </p>
           <button
-            className="py-2 px-5 border-1 rounded-full font-bold text-[20px] mt-[60px] hover:bg-white hover:text-[#121212] translate-all duration-300 ease"
+            className="py-2 px-5 border-1 rounded-full font-bold text-[20px] mt-[20px] md:mt-[60px] hover:bg-white hover:text-[#121212] translate-all duration-300 ease"
             onClick={() => {
               document
                 .getElementById("contacts")
