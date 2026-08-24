@@ -45,9 +45,9 @@ const Projects = () => {
       <div className="mx-5 md:mx-10 lg:mx-20 text-center py-[60px]">
         <h2 className="text-[45px] font-bold">Projects</h2>
         <p className="text-[#B8B8B8] text-[18px] leading-[1.5] mt-[14px] mb-[75px]">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
-          accusantium officiis quisquam temporibus a repellat error repellendus,
-          nostrum saepe officia.
+          This section present a curated list of most of my work using different
+          technologies. Many of this projects have allowed me learn and
+          understand the logic behind these technologies
         </p>
         <div className="flex justify-center mb-[50px]">
           <span

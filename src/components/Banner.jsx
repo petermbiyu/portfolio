@@ -3,42 +3,6 @@ import { FaArrowRight } from "react-icons/fa";
 import { assets } from "../assets/assets";
 
 const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
-  const period = 2000;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    const tick = () => {
-      let i = loopNum % toRotate.length;
-      let fullText = toRotate[i];
-      let updatedText = isDeleting
-        ? fullText.substring(0, text.length - 1)
-        : fullText.substring(0, text.length + 1);
-
-      setText(updatedText);
-      if (isDeleting) {
-        setDelta((prev) => prev / 2);
-      }
-      if (!isDeleting && updatedText === fullText) {
-        setIsDeleting(true);
-        setDelta(period);
-      } else if (isDeleting && updatedText === "") {
-        setIsDeleting(false);
-        setLoopNum(loopNum + 1);
-        setDelta(500);
-      }
-    };
-    return () => {
-      clearInterval(ticker);
-    };
-  });
   return (
     <section
       id="home"
@@ -49,22 +13,23 @@ const Banner = () => {
           <span className="font-bold spacing-[0.8px] px-[10px] py-[8px] text-[20px] mb-[16px] inline-block border-1 border-gray-500 bg-linear-[90deg] from-[rgba(170,54,124)] to-[rgba(74,47,169)] ">
             Welcome to my Portfolio
           </span>
-          <h1 className="text-[20px] md:text-[30] lg:text-[40px] font-bold spacing-[0.8px] mb-[20px] block leading-none">
-            Hello, it's me <br />
-            <span className="text-[30px] md:text-[40px] lg:text-[50px]">
-              Peter Muigai <br />
-            </span>
-            And I'm a <span>{text}</span>
+          <h1 className="text-[25px] md:text-[35] lg:text-[45px] font-bold spacing-[0.8px] mb-[20px] block leading-none">
+            Hi, I'm Peter Muigai
           </h1>
           <p className="text-[#B8B8B8] text-[18px] spacing-[0.8px] leading-relaxed w-[96%]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            at voluptas pariatur, itaque culpa provident quo dicta enim omnis
-            corrupti fugit alias. Asperiores consequatur laudantium quas placeat
-            nostrum commodi magnam molestias fugiat ipsam, reprehenderit rem,
-            facilis odio autem consequuntur! Voluptates temporibus quos quidem
-            odit delectus quod molestias officia accusantium modi magnam iusto
-            earum veritatis, reiciendis dolorem nemo harum soluta magni
-            suscipit?
+            A passionate Frontend and Backend Developer, Blogger, Vlogger, and
+            Teacher.
+            <br /> I enjoy building modern, responsive, and user-friendly web
+            applications that solve real-world problems. From creating engaging
+            frontend experiences to developing powerful backend systems and
+            working with databases, I love turning ideas into functional digital
+            solutions. Beyond coding, I share knowledge and experiences through
+            blogging and vlogging, covering topics around technology, personal
+            growth, education, and everyday life. As a teacher, I’m also
+            passionate about helping others learn, grow, and discover their
+            potential.
+            <br /> I believe in continuous learning, creativity, and using
+            technology and knowledge to make a meaningful impact.
           </p>
           <button
             className="py-2 px-5 border-1 rounded-full font-bold text-[20px] mt-[60px] hover:bg-white hover:text-[#121212] translate-all duration-300 ease"

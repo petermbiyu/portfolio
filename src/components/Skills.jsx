@@ -32,9 +32,12 @@ const Skills = () => {
         <div>
           <h2 className="text-[45px] font-bold">Technical Skills</h2>
           <p className="text-[#B8B8B8] text-[18px] leading-[1.5] mt-[14px] mb-[75px]">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Perferendis facere fugiat molestiae illum iure accusantium? In eaque
-            et modi sunt.
+            I work across the full web development stack, using modern frontend
+            technologies like React, JavaScript, Tailwind CSS, and Vite,
+            alongside Node.js and Express.js for backend development. I also
+            have experience working with sql (PostgreSQL, MySQL, SQLite,)
+            MongoDB, Prisma, and Mongoose to build complete and reliable web
+            applications.
           </p>
           <Carousel
             responsive={responsive}
