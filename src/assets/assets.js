@@ -18,6 +18,8 @@ import navIcon3 from "./nav-icon3.svg";
 import projectImg1 from "./project-img1.png";
 import projectImg2 from "./project-img2.png";
 import projectImg3 from "./project-img3.png";
+import tipsapp from "./tipsapp.webp";
+import buscard from "./buscard.webp";
 
 export const assets = {
   favicon,
@@ -39,5 +41,7 @@ export const assets = {
   projectImg1,
   projectImg2,
   projectImg3,
+  tipsapp,
   profileBg,
+  buscard,
 };

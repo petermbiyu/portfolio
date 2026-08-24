@@ -51,7 +51,7 @@ const Contact = () => {
                 name="last_name"
                 placeholder="Last Name"
                 required
-                className="w-full mt-2 lg:w-[50%] py-3 sm:py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] bg-gray-200/10"
+                className="w-full mt-2 lg:mt-0 lg:w-[50%] py-3 sm:py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] bg-gray-200/10"
               />
             </div>
             <div className="lg:flex items-center justify-center gap-2 mb-[10px]">
@@ -66,7 +66,7 @@ const Contact = () => {
                 type="text"
                 name="phone"
                 placeholder="Phone No."
-                className="w-full mt-2 lg:w-[50%] py-3 sm:py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] w-[50%] bg-gray-200/10"
+                className="w-full mt-2 lg:mt-0 lg:w-[50%] py-3 sm:py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] w-[50%] bg-gray-200/10"
               />
             </div>
             <div className="mb-[10px] sm:mb-[20px]">

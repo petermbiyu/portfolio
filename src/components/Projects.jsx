@@ -5,34 +5,46 @@ import { assets } from "../assets/assets";
 const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
+      title: "Tips App Calculator",
       description: "Design and develop",
-      imgUrl: assets.projectImg1,
+      imgUrl: assets.tipsapp,
+      prevLink: "https://petermbiyu.github.io/tipcalculator/",
+      gitLink: "https://github.com/petermbiyu/tipcalculator.git",
     },
     {
-      title: "Business Startup",
+      title: "Digital Card",
       description: "Design and develop",
-      imgUrl: assets.projectImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design and develop",
-      imgUrl: assets.projectImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design and develop",
-      imgUrl: assets.projectImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design and develop",
-      imgUrl: assets.projectImg2,
+      imgUrl: assets.buscard,
+      prevLink: "https://petermbiyu.github.io/ProfileCard/",
+      gitLink: "https://github.com/petermbiyu/ProfileCard.git",
     },
     {
       title: "Business Startup",
       description: "Design and develop",
       imgUrl: assets.projectImg3,
+      prevLink: "",
+      gitLink: "",
+    },
+    {
+      title: "Business Startup",
+      description: "Design and develop",
+      imgUrl: assets.projectImg1,
+      prevLink: "",
+      gitLink: "",
+    },
+    {
+      title: "Business Startup",
+      description: "Design and develop",
+      imgUrl: assets.projectImg2,
+      prevLink: "",
+      gitLink: "",
+    },
+    {
+      title: "Business Startup",
+      description: "Design and develop",
+      imgUrl: assets.projectImg3,
+      prevLink: "",
+      gitLink: "",
     },
   ];
 
