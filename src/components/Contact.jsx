@@ -73,7 +73,7 @@ const Contact = () => {
               <textarea
                 name="message"
                 required
-                className="py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] w-[100%] h-40 md:h-60 bg-gray-200/10"
+                className="py-4 px-5 outline-none border-2 border-[#B8B8B8] rounded-[15px] w-[100%] h-60 bg-gray-200/10"
               ></textarea>
             </div>
             <button
