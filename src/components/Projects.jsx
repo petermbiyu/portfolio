@@ -19,11 +19,11 @@ const Projects = () => {
       gitLink: "https://github.com/petermbiyu/ProfileCard.git",
     },
     {
-      title: "Business Startup",
-      description: "Design and develop",
-      imgUrl: assets.projectImg3,
+      title: "Live Weather App",
+      description: "Making API calls",
+      imgUrl: assets.weather,
       prevLink: "",
-      gitLink: "",
+      gitLink: "https://github.com/petermbiyu/weather-app.git",
     },
     {
       title: "Business Startup",

@@ -20,6 +20,7 @@ import projectImg2 from "./project-img2.png";
 import projectImg3 from "./project-img3.png";
 import tipsapp from "./tipsapp.webp";
 import buscard from "./buscard.webp";
+import weather from "./weather.webp";
 
 export const assets = {
   favicon,
@@ -44,4 +45,5 @@ export const assets = {
   tipsapp,
   profileBg,
   buscard,
+  weather,
 };
